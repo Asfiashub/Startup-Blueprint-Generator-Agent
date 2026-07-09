@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Blueprint Generator</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚀 Startup Blueprint Generator</h1>
+    <p class="subtitle">Powered by IBM Granite + watsonx.ai</p>
+
+    <div class="card">
+
+        <h2>Startup Idea</h2>
+
+        <textarea
+        placeholder="Enter your startup idea here..."></textarea>
+
+        <button>Generate Blueprint</button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Generated Blueprint</h2>
+
+        <div class="output">
+
+            <p>Your generated blueprint will appear here.</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
